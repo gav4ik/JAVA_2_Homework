@@ -22,7 +22,7 @@ public class Sweets extends Present{
 
         @Override
         public String toString(){
-            return "Sweets: " + super.toString() + ", Тип сладости: " + type;
+            return "Сладости: " + super.toString() + ", Тип сладости: " + type;
         }
     }
 
