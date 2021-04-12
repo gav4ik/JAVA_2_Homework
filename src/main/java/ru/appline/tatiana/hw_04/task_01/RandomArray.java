@@ -25,7 +25,7 @@ public class RandomArray {
                 max_negative = myArray[i];
                 index_negative = i;
             }
-            if ((myArray[i] >= 0) && (min_positive > myArray[i])) {
+            if ((myArray[i] > 0) && (min_positive > myArray[i])) {
                 min_positive = myArray[i];
                 index_positive = i;
             }

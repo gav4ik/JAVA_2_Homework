@@ -53,19 +53,22 @@ public abstract class Present {
     }
 
     public static void main(String[] args) {
-        Sweets sw1 = new Sweets("Белочка", 10, 35.6, "Конфета");
-        Sweets sw2 = new Sweets("Хрустик", 20, 47.99, "Вафля");
-        Sweets sw3 = new Sweets("Буратино", 7, 20.5, "Леденец");
-        Sweets sw4 = new Sweets("Алёнка", 100, 50.35, "Шоколад");
-        Toys t1 = new Toys("Басик", 450, 564.10, "Мягкая игрушка");
-        Toys t2 = new Toys("От винта", 380, 421.80, "Конструктор");
-        Toys t3 = new Toys("Снеговик", 30, 85.00, "Ёлочная игрушка");
+        Jellybean sw1 = new Jellybean("Кислые червячки", 10, 35.6, "Красный");
+        Jellybean sw2 = new Jellybean("Мишки", 20, 47.99, "Зеленый");
+        Jellybean sw3 = new Jellybean("Буратино", 7, 20.5, "Жёлтый");
+        Jellybean sw4 = new Jellybean("Бонпари", 100, 50.35, "Разноцветный");
+        Candy t1 = new Candy("Ириска", 450, 564.10, true);
+        Candy t2 = new Candy("Грильяж", 380, 421.80, false);
+        Candy t3 = new Candy("Му-Му", 30, 85.00, true);
+        Chocolate ch1 = new Chocolate("Альпенголд", 90, 42.6, 60);
+        Chocolate ch2 = new Chocolate("Виспа", 100, 75., 70);
+        Chocolate ch3 = new Chocolate("Шок", 150, 120.5, 80);
 
         double totalSum = 0;
         int totalWeight = 0;
         System.out.println(" Сформирован школьный подарок: ");
 
-        Present[] schoolGift = {sw1, sw2, sw4, t1};
+        Present[] schoolGift = {sw1, t2, ch1, ch3};
 
 
         for (Present el : schoolGift) {
@@ -80,7 +83,7 @@ public abstract class Present {
         double totalSum1 = 0;
         int totalWeight1 = 0;
 
-        Present[] kinderGift = {sw1, sw2, sw3, t2, t3};
+        Present[] kinderGift = {sw2, sw3, t1, t3, ch2};
 
 
         for (Present elem : kinderGift) {
